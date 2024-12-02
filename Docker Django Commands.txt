@@ -1,0 +1,6 @@
+docker compose run --rm nombreInstanciaContenedor django-admin startproject projectName .   --- Create a new Project
+docker compose run --rm nombreInstanciaContenedor python manage.py startapp appName         --- Create a new App for the Project
+docker compose run --rm nombreInstanciaContenedor python manage.py makemigrations           --- Create the Migrations File
+docker compose run --rm nombreInstanciaContenedor python manage.py migrate                  --- Apply Migration Changes
+docker compose run --rm nombreInstanciaContenedor python manage.py createsuperuser          --- Create SuperUser for Administration
+docker compose run --rm nombreInstanciaContenedor python manage.py changepassword           --- Change password for a User
